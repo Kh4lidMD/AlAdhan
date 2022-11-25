@@ -31,13 +31,13 @@ If you find any bugs or problems, please report them in the [issues](https://www
 The project is available on [PyPI](https://pypi.org/project/aladhan/), so you can install it using pip:
 
 ```python
-pip install aladhan
+pip install aladhan-api
 ```
 
 If you have an older version of the API, you can update it to the latest version using:
 
 ```python
-pip install aladhan --upgrade
+pip install aladhan-api --upgrade
 ```
 
 <br>
@@ -49,6 +49,11 @@ Not available yet, but coming soon.<br>
 <br>
 
 # Versioning
+
+v2.0.0 (Alpha)
+
+- Changed PIP installation to `aladhan-api`
+- Added patch versioning for future purposes
 
 v1.0 (Alpha)
 
