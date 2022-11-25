@@ -28,7 +28,7 @@ If you find any bugs or problems, please report them in the [issues](https://www
 
 # Installation
 
-The project is available on [PyPI](https://pypi.org/project/aladhan/), so you can install it using pip:
+The project is available on [PyPI](https://pypi.org/project/aladhan-api/), so you can install it using pip:
 
 ```python
 pip install aladhan-api
