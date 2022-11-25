@@ -50,6 +50,10 @@ Not available yet, but coming soon.<br>
 
 # Versioning
 
+v2.0.1 (Alpha)
+
+- Fixed import error (renamed `aladhan/location.py` to `aladhan/location_types.py`
+
 v2.0.0 (Alpha)
 
 - Changed PIP installation to `aladhan-api`
