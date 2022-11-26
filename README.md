@@ -59,6 +59,6 @@ v2.0.0 (Alpha)
 - Changed PIP installation to `aladhan-api`
 - Added patch versioning for future purposes
 
-v1.0 (Alpha)
+v1.0.0 (Alpha)
 
 - Initial release.
