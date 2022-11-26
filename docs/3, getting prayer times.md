@@ -14,10 +14,11 @@ If you specify it in the main class, this will be the default location for all m
 
 <br>
 
-## `get_calendar`
+## aladhan.get_calendar
 
 This method returns a list of `Adhan` objects for a specific month (current month by default).
 
+Example:
 ```py
 for adhan in aladhan.get_calendar():
     print(adhan)
@@ -32,6 +33,20 @@ Maghrib at 2022/01/01 05:00 PM
 Isha at 2022/01/01 06:30 PM
 till the end of the month...
 ```
+
+Arguments:
+
+- `location: Union[Coordinates, Address, City] = None` specific location, if not specified uses default location (`aladhan.default_location`)
+- `year: int=None` is the year of the prayer times
+- `month: int=None` is the month of the prayer times
+
+Returns:
+
+- `list[Adhan]`
+
+Raises:
+
+- `ValueError` this is raised if no location is specified in the method or during initializing.
 
 <br>
 
