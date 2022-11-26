@@ -50,6 +50,11 @@ Not available yet, but coming soon.<br>
 
 # Versioning
 
+v2.2.0 (Alpha)
+
+- Added `rakat` method for the `Adhan` object, returns the number of rakat in salah.
+- New [Documentation](/docs/1%2C%20getting%20started.md)
+
 v2.0.1 (Alpha)
 
 - Fixed import error (renamed `aladhan/location.py` to `aladhan/location_types.py`
