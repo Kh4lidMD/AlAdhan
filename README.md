@@ -44,7 +44,10 @@ pip install aladhan-api --upgrade
 
 # Documentation
 
-Not available yet, but coming soon.<br>
+- [Getting Started](/docs/1%2C%20getting%20started.md)
+- [Location Types](/docs/2%2C%20location%20types.md)
+- [Getting Prayer Times](/docs/3%2C%20getting%20prayer%20times.md)
+- [Adhan Object](/docs/4%2C%20adhan%20object.md)
 
 <br>
 
