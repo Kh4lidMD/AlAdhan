@@ -16,7 +16,7 @@ class Adhan:
 
         if self.name not in ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']:
             raise ValueError('Invalid salah name.')
-    
+
     def readable_timing(self, show_time=True, show_date=True, _24h=False, arabic=False) -> str:
         """
         Returns a readable timing for the salah from the datetime object.
@@ -64,7 +64,7 @@ class Adhan:
         else:
             return self.datetime_obj.strftime(format_)
 
-    def wait(self):
+    def wait(self) -> None:
         """Wait until the salah time has passed."""
         while True:
             if datetime.now() >= self.datetime_obj:
@@ -82,6 +82,19 @@ class Adhan:
     def is_secret(self) -> bool:
         """Figure out if the salah is secret (سرية) or not."""
         return self.name in ['Dhuhr', 'Asr']
+
+    def rakat(self) -> int:
+        """Returns the number of rak'at for the salah."""
+        if self.name == 'Fajr':
+            return 2
+        elif self.name == 'Dhuhr':
+            return 4
+        elif self.name == 'Asr':
+            return 4
+        elif self.name == 'Maghrib':
+            return 3
+        elif self.name == 'Isha':
+            return 4
 
     def get_name(self, lang='en') -> str:
         """
