@@ -60,7 +60,7 @@ v2.2.0 (Alpha)
 
 v2.0.1 (Alpha)
 
-- Fixed import error (renamed `aladhan/location.py` to `aladhan/location_types.py`
+- Fixed import error (renamed `aladhan/location.py` to `aladhan/location_types.py`)
 
 v2.0.0 (Alpha)
 
