@@ -32,7 +32,7 @@ pip install aladhan-api --upgrade
 
 # Documentation
 
-See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki]
+See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 <br>
 
