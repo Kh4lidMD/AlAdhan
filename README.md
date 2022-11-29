@@ -16,7 +16,7 @@ Without any API keys, authentication, or registration, you can use this API to g
 
 # Installation
 
-The project is available on [PyPI](https://pypi.org/project/aladhan-api/), so you can install it using pip:
+The project is available on [PyPI](https://pypi.org/project/aladhan-api/), so you can install it using [pip](https://www.w3schools.com/python/python_pip.asp):
 
 ```python
 pip install aladhan-api
