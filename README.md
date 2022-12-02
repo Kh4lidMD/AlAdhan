@@ -42,6 +42,18 @@ See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 # Versioning
 
+v4.0.0 (Alpha) **Latest**
+
+- Removed the `get_prayer_times` method, replaced with `get_today_times`, `get_calendar_times`, and `get_annual_times` methods.
+- Fixed missing usage of `year` and `month` arguments in the calendar method.
+- Added `callback` and `threaded_wait` arguments to the `Adhan.wait` method.
+- Better code structure.
+
+_These Wiki pages have been updated:_
+
+- [Get Prayer Times](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Get-Prayer-Times)
+- [Adhan Object](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Adhan-Object)
+
 v3.0.0 (Alpha) **Latest**
 
 - Changed `get_calendar` name to `get_prayer_times`.
