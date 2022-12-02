@@ -48,11 +48,9 @@ v4.0.0 (Alpha) **Latest**
 - Fixed missing usage of `year` and `month` arguments in the calendar method.
 - Added `callback` and `threaded_wait` arguments to the `Adhan.wait` method.
 - Better code structure.
-
-_These Wiki pages have been updated:_
-
-- [Get Prayer Times](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Get-Prayer-Times)
-- [Adhan Object](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Adhan-Object)
+- _These Wiki pages have been updated:_
+  - [_Get Prayer Times_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Get-Prayer-Times)
+  - [_Adhan Object_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Adhan-Object)
 
 v3.0.0 (Alpha) **Latest**
 
