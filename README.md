@@ -52,7 +52,7 @@ v4.0.0 (Alpha) **Latest**
   - [_Get Prayer Times_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Get-Prayer-Times)
   - [_Adhan Object_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Adhan-Object)
 
-v3.0.0 (Alpha) **Latest**
+v3.0.0 (Alpha)
 
 - Changed `get_calendar` name to `get_prayer_times`.
 - Added `today_only` parameter to `get_prayer_times`.
