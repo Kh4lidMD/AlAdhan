@@ -1,6 +1,6 @@
 from time import sleep
 from datetime import datetime
-
+import threading
 
 class Adhan:
 
@@ -64,12 +64,26 @@ class Adhan:
         else:
             return self.datetime_obj.strftime(format_)
 
-    def wait(self) -> None:
-        """Wait until the salah time has passed."""
-        while True:
-            if datetime.now() >= self.datetime_obj:
-                break
-            sleep(1)
+    def wait(self, callback=None, threaded_wait=True, **kwargs):
+        """
+        Wait until the salah time has passed.
+        
+        - `callback: callable=None` is a function to be called when the salah time has passed.
+        - `threaded_wait: bool=True` to wait in a separate thread or not, this is useful if you want to do other things while waiting and having a callback function.
+    
+        """ 
+        def wait_function():
+            while True:
+                if datetime.now() >= self.datetime_obj:
+                    break
+                sleep(1)
+            if callback:
+                callback(**kwargs)
+
+        if threaded_wait:
+            threading.Thread(target=wait_function).start()
+        else:
+            wait_function()
 
     def is_passed(self) -> bool:
         """Returns `True` if the salah time has passed, `False` otherwise."""
