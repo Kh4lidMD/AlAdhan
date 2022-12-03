@@ -46,7 +46,19 @@ See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 # Versioning
 
-v4.0.0 (Alpha) **Latest**
+v4.1.0 (Alpha) **Latest**
+
+- Added custom exceptions especially for the following return codes:
+  - 400 Bad Request error: `BadRequestException`
+  - 429 Rate limited error: `RateLimitedException`
+  - 500 Internal Server error: `ServerErrorException`
+
+  _They're avaialble in the `aladhan.exceptions`, could be directly imported from the `aladhan` module._
+- New Wiki page: [Exception Handling](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Exception-Handling)
+
+_Started to save a copy of the Wiki pages in every release._
+
+v4.0.0 (Alpha)
 
 - Removed the `get_prayer_times` method, replaced with `get_today_times`, `get_calendar_times`, and `get_annual_times` methods.
 - Fixed missing usage of `year` and `month` arguments in the calendar method.
