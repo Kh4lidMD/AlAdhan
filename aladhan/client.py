@@ -2,6 +2,7 @@ from datetime import datetime
 from time import sleep
 from .location_types import Coordinates, Address, City
 from .adhan import Adhan
+from .exceptions import *
 from typing import Union
 import requests
 
@@ -45,8 +46,18 @@ class Aladhan:
             return endpoint + 'ByAddress'
         if isinstance(location, City):
             return endpoint + 'ByCity'
-        
-    
+
+
+    @staticmethod
+    def __detect_exceptions(response: requests.Response, data: dict):
+        if response.status_code == 429:
+            raise RateLimitException("Rate limit exceeded.")
+        if response.status_code == 400:
+            raise BadRequestException(data['data'])
+        if response.status_code == 500:
+            raise ServerErrorException(data['message'])
+
+
     def get_calendar_times(
         self, 
         location: Union[Coordinates, Address, City] = None, 
@@ -85,6 +96,7 @@ class Aladhan:
         # send the request and get the JSON data
         response = requests.get(API + ENDPOINT, params=params)
         data = response.json()
+        self.__detect_exceptions(response, data)
 
         # loop through the data and create a list of Adhan objects
         adhan_list = []
@@ -125,6 +137,7 @@ class Aladhan:
         # send the request and get the JSON data
         response = requests.get(API + ENDPOINT, params=params)
         data = response.json()
+        self.__detect_exceptions(response, data)
 
         # loop through the data and create a list of Adhan objects
         adhan_list = []
@@ -168,6 +181,7 @@ class Aladhan:
         # send the request and get the JSON data
         response = requests.get(API + ENDPOINT, params=params)
         data = response.json()
+        self.__detect_exceptions(response, data)
         
         # loop through the data and create a list of Adhan objects
         adhan_list = []
