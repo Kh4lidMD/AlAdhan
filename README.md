@@ -19,6 +19,7 @@ _Learn more about Adhan in [Wikipedia](https://en.wikipedia.org/wiki/Adhan)_
 - No API keys, authentication, or registration required.
 - Converting the JSON responses to Python objects.
 - 3 Location methods: Coordinates, City, and Address.
+- More Adhan metadata made by the module, such as the number of rakat in salah, sunnan al rawatib rakat number, is hijri or secret salah, etc.
 
 <br>
 
@@ -46,17 +47,27 @@ See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 # Versioning
 
-v4.1.0 (Alpha) **Latest**
+v5.0.0 (Alpha) **Latest**
+
+- Set `threaded_wait` default argument in the `Adhan.wait` method from `True` to `False`.
+- Added missing file `aladhan/exceptions.py` to the repository. which was included in the package but not in the repository.
+- Changed `RateLimitException` to `RateLimitedException` (typo fix).
+- Added `sunnan_al_rawatib` function to the `Adhan` object, returns a dictionary with `before` and `after` keys, each one contains the sunnan al rawatib rakat number.
+  - _[English Source](https://www.wikihow.com/Pray-Sunnah-Prayers)_
+  - _[Arabic Source](https://mawdoo3.com/%D9%85%D8%A7_%D9%87%D9%8A_%D8%B3%D9%86%D9%86_%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%85%D8%A4%D9%83%D8%AF%D8%A9)_
+- Added `__version__` attribute to the `aladhan` module, a version tuple like `(major, minor, patch)`.
+
+v4.1.0 (Alpha)
 
 - Added custom exceptions especially for the following return codes:
-  - 400 Bad Request error: `BadRequestException`
-  - 429 Rate limited error: `RateLimitedException`
-  - 500 Internal Server error: `ServerErrorException`
+  - 400 bad request error: `BadRequestException`
+  - 429 rate limited error: `RateLimitedException`
+  - 500 internal server error: `ServerErrorException`
 
   _They're avaialble in the `aladhan.exceptions`, could be directly imported from the `aladhan` module._
 - New Wiki page: [Exception Handling](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Exception-Handling)
 
-_Started to save a copy of the Wiki pages in every release._
+  _Started to save a copy of the Wiki pages in every release._
 
 v4.0.0 (Alpha)
 

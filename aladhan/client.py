@@ -51,7 +51,7 @@ class Aladhan:
     @staticmethod
     def __detect_exceptions(response: requests.Response, data: dict):
         if response.status_code == 429:
-            raise RateLimitException("Rate limit exceeded.")
+            raise RateLimitedException("Rate limit exceeded.")
         if response.status_code == 400:
             raise BadRequestException(data['data'])
         if response.status_code == 500:

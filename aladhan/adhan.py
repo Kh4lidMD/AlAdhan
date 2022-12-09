@@ -64,7 +64,7 @@ class Adhan:
         else:
             return self.datetime_obj.strftime(format_)
 
-    def wait(self, callback=None, threaded_wait=True, **kwargs):
+    def wait(self, callback=None, threaded_wait=False, **kwargs):
         """
         Wait until the salah time has passed.
         
@@ -127,6 +127,18 @@ class Adhan:
             return translate[self.name]
         else:
             return self.name
+
+    def sunnan_al_rawatib(self) -> dict:
+        """
+        Returns a dictionary with the number of sunnah prayers `before` and `after` the salah.
+        """
+        
+        if self.name == 'Fajr': return {'before': 2,'after': 0}
+        elif self.name == 'Dhuhr': return {'before': 4, 'after': 2}
+        elif self.name == 'Asr': return {'before': 0, 'after': 0}
+        elif self.name == 'Maghrib': return {'before': 0, 'after': 2}
+        elif self.name == 'Isha': return {'before': 0, 'after': 2}
+        
 
     def __str__(self):
         return f'{self.name} at {self.readable_timing()}'
