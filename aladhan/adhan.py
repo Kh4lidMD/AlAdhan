@@ -2,6 +2,7 @@ from time import sleep
 from datetime import datetime
 import threading
 
+
 class Adhan:
 
     def __init__(self, name: str, datetime_obj: datetime):
@@ -29,14 +30,10 @@ class Adhan:
         Note: the date comes first, then the time if both are shown.
         """
 
-        if show_date and show_time:
-            format_ = '%Y/%m/%d %H:%M (%p)'
-        elif show_date:
-            format_ = '%Y/%m/%d'
-        elif show_time:
-            format_ = '%H:%M (%p)'
-        else:
-            format_ = ''
+        if show_date and show_time: format_ = '%Y/%m/%d %H:%M (%p)'
+        elif show_date: format_ = '%Y/%m/%d'
+        elif show_time: format_ = '%H:%M (%p)'
+        else: format_ = ''
 
         if _24h:
             format_ = format_.replace('(%p)', '').strip()
@@ -70,7 +67,6 @@ class Adhan:
         
         - `callback: callable=None` is a function to be called when the salah time has passed.
         - `threaded_wait: bool=True` to wait in a separate thread or not, this is useful if you want to do other things while waiting and having a callback function.
-    
         """ 
         def wait_function():
             while True:
@@ -99,16 +95,11 @@ class Adhan:
 
     def rakat(self) -> int:
         """Returns the number of rak'at for the salah."""
-        if self.name == 'Fajr':
-            return 2
-        elif self.name == 'Dhuhr':
-            return 4
-        elif self.name == 'Asr':
-            return 4
-        elif self.name == 'Maghrib':
-            return 3
-        elif self.name == 'Isha':
-            return 4
+        if self.name == 'Fajr': return 2
+        elif self.name == 'Dhuhr': return 4
+        elif self.name == 'Asr': return 4
+        elif self.name == 'Maghrib': return 3
+        elif self.name == 'Isha': return 4
 
     def get_name(self, lang='en') -> str:
         """
@@ -129,16 +120,12 @@ class Adhan:
             return self.name
 
     def sunnan_al_rawatib(self) -> dict:
-        """
-        Returns a dictionary with the number of sunnah prayers `before` and `after` the salah.
-        """
-        
+        """Returns a dictionary with the number of sunnah prayers `before` and `after` the salah."""
         if self.name == 'Fajr': return {'before': 2,'after': 0}
         elif self.name == 'Dhuhr': return {'before': 4, 'after': 2}
         elif self.name == 'Asr': return {'before': 0, 'after': 0}
         elif self.name == 'Maghrib': return {'before': 0, 'after': 2}
         elif self.name == 'Isha': return {'before': 0, 'after': 2}
-        
 
     def __str__(self):
         return f'{self.name} at {self.readable_timing()}'

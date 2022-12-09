@@ -13,6 +13,7 @@ SKIP = ['Sunrise', 'Sunset', 'Midnight', 'Lastthird', 'Firstthird', 'Imsak']
 
 class Aladhan:
 
+
     def __init__(self, default_location: Union[Coordinates, Address, City] = None):
         """
         The main class for the API.
