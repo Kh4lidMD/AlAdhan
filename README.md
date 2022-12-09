@@ -2,7 +2,7 @@
 
 Without any API keys, authentication, or registration, you can use this API to get the Islamic Adhan (_a call to prayer_) times  for any location in the world for free using Python, this project uses the [aladhan.com official prayer times API](https://aladhan.com/prayer-times-api) (thanks to them for the great work and free API). I have made this API to convert the JSON responses from the aladhan.com API and simplify them to a Python objects and classes, so you can use them in your Python projects and they are easy to use. 
 
-<img src="./thumbnail.png">
+<img src="./thumbnail.jpg">
 
 **This is still the alpha version, there is a lot of coming features, also note that any big changes in the API will happen at any time!** If you find any bugs or problems, please report them in the [issues](https://www.github.com/Kh4lidMD/AlAdhan/issues) page.
 
