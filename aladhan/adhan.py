@@ -61,7 +61,7 @@ class Adhan:
         else:
             return self.datetime_obj.strftime(format_)
 
-    def wait(self, callback=None, threaded_wait=False, *args, **kwargs):
+    def wait(self, callback=None, threaded_wait=False, **kwargs):
         """
         Wait until the salah time has passed.
         
@@ -74,7 +74,7 @@ class Adhan:
                     break
                 sleep(1)
             if callback:
-                callback(*args, **kwargs)
+                callback(**kwargs)
 
         if threaded_wait:
             threading.Thread(target=wait_function).start()
