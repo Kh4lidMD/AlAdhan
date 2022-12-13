@@ -47,63 +47,21 @@ See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 # Versioning
 
-v5.0.0 (Alpha) **Latest**
+[v5.0.0 (Alpha) **Latest**](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v5.0.0-alpha)
 
-- Set `threaded_wait` default argument in the `Adhan.wait` method from `True` to `False`.
-- Added missing file `aladhan/exceptions.py` to the repository. which was included in the package but not in the repository.
-- Changed `RateLimitException` to `RateLimitedException` (typo fix).
-- Added `sunnan_al_rawatib` function to the `Adhan` object, returns a dictionary with `before` and `after` keys, each one contains the sunnan al rawatib rakat number.
-  - _[English Source](https://www.wikihow.com/Pray-Sunnah-Prayers)_
-  - _[Arabic Source](https://mawdoo3.com/%D9%85%D8%A7_%D9%87%D9%8A_%D8%B3%D9%86%D9%86_%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%85%D8%A4%D9%83%D8%AF%D8%A9)_
-- Added `__version__` attribute to the `aladhan` module, a version tuple like `(major, minor, patch)`.
+[v4.1.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v4.1.0-alpha)
 
-v4.1.0 (Alpha)
+[v4.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v4.0.0-alpha)
 
-- Added custom exceptions especially for the following return codes:
-  - 400 bad request error: `BadRequestException`
-  - 429 rate limited error: `RateLimitedException`
-  - 500 internal server error: `ServerErrorException`
+[v3.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v3.0.0-alpha)
 
-  _They're avaialble in the `aladhan.exceptions`, could be directly imported from the `aladhan` module._
-- New Wiki page: [Exception Handling](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Exception-Handling)
+[v2.2.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v2.2.0-alpha)
 
-  _Started to save a copy of the Wiki pages in every release._
+[v2.0.1 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v2.0.1-alpha)
 
-v4.0.0 (Alpha)
+[v2.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v2.0.0-alpha)
 
-- Removed the `get_prayer_times` method, replaced with `get_today_times`, `get_calendar_times`, and `get_annual_times` methods.
-- Fixed missing usage of `year` and `month` arguments in the calendar method.
-- Added `callback` and `threaded_wait` arguments to the `Adhan.wait` method.
-- Better code structure.
-- _These Wiki pages have been updated:_
-  - [_Get Prayer Times_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Get-Prayer-Times)
-  - [_Adhan Object_](https://www.github.com/Kh4lidMD/AlAdhan/wiki/Adhan-Object)
-
-v3.0.0 (Alpha)
-
-- Changed `get_calendar` name to `get_prayer_times`.
-- Added `today_only` parameter to `get_prayer_times`.
-- Folder documentation removed.
-- New better documentation hosted in the repository [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki).
-- All `aladhan.location_types` objects are now available in the main import directly (e.g. `aladhan.location_types.City` _could_ be `aladhan.City`).
-- Removed `ValueError` when only one of the `year` or `month` parameters is passed to `get_prayer_times`. Because the API does not return an error when one of them is missing.
-
-v2.2.0 (Alpha)
-
-- Added `rakat` method for the `Adhan` object, returns the number of rakat in salah.
-- New Documentation.
-
-v2.0.1 (Alpha)
-
-- Fixed import error (renamed `aladhan/location.py` to `aladhan/location_types.py`).
-
-v2.0.0 (Alpha)
-
-- Changed PIP installation to `aladhan-api`.
-
-v1.0.0 (Alpha)
-
-- Initial release.
+v1.0.0 (Alpha) - initial release
 
 <br><br>
 
