@@ -1,5 +1,4 @@
 from datetime import datetime
-from time import sleep
 from .location_types import Coordinates, Address, City
 from .adhan import Adhan
 from .exceptions import *
