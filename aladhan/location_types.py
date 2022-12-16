@@ -1,10 +1,13 @@
 from urllib.parse import quote
+from .exceptions import InvalidLocationException
 
 
 class Coordinates:
-
+    
     def __init__(self, latitude: float, longitude: float):
         """A GPS coordinate object."""
+        if not (longitude >= -180 and longitude <= 180 and latitude >= -90 and latitude <= 90):
+            raise InvalidLocationException("Invalid coordinates")
         self.latitude = latitude
         self.longitude = longitude
 
