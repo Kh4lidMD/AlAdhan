@@ -17,3 +17,7 @@ class ServerErrorException(Exception):
     which is commonly happening in the Aladhan API for non-handled errors.
     """
     pass
+
+class InvalidLocationException(Exception):
+    """Exception raised when a invalid location is provided"""
+    pass
