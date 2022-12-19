@@ -1,4 +1,4 @@
-from .client import Aladhan
+from .client import Client
 from .location_types import City, Address, Coordinates
 from .exceptions import *
 
