@@ -47,7 +47,9 @@ See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
 
 # Versioning
 
-[v5.0.0 (Alpha) **Latest**](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v5.0.0-alpha)
+[v6.0.0 (Alpha) **Latest**](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v6.0.0-alpha)
+
+[v5.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v5.0.0-alpha)
 
 [v4.1.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v4.1.0-alpha)
 

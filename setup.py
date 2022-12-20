@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="aladhan-api",
-    version="5.0.0",
+    version="6.0.0",
     author="Khaled Mahmoud",
     author_email="KhalidYBel@gmail.com",
     description="A Python package to calculate Islamic prayer times for any location in the world.",
