@@ -8,7 +8,7 @@
 
 import sphinx_rtd_theme
 
-project = 'Al Adha Python API'
+project = 'Al Adhan Python API'
 copyright = '2022, Khaled Mahmoud'
 author = 'Khaled Mahmoud'
 release = '6.0.0 Alpha'
