@@ -37,3 +37,19 @@ aladhan.ServerErrorException
 This exception is raised when the API returns a 500 Internal Server Error error, this means that the API got a non-handled error, and it's unable to process the request.
 
 Which is very common in the API due to unhandled errors.
+
+aladhan.InvalidLocationException
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exception raised when a invalid location is provided, e.g invalid coordinates.
+
+.. code-block:: python
+
+    >>> import aladhan
+    >>> 
+    >>> location = aladhan.Coordinates(0, 1000)
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "C:\Users\Khaled\Documents\GitHub\AlAdhan\aladhan\location_types.py", line 10, in __init__
+            raise InvalidLocationException("Invalid coordinates")
+    aladhan.exceptions.InvalidLocationException: Invalid coordinates
