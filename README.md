@@ -41,7 +41,7 @@ pip install aladhan-api --upgrade
 
 # Documentation
 
-See the [Wiki](https://www.github.com/Kh4lidMD/AlAdhan/wiki)
+Now you can find the documentation for the API in [Read the Docs](https://aladhan.readthedocs.io/en/latest/).
 
 <br>
 
