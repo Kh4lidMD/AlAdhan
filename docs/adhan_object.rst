@@ -18,7 +18,7 @@ Let's get some ``Adhan`` objects:
 
 Here is a full list of all the attributes of the ``Adhan`` object:
 
-aladhan.Aladhan.readable_timing
+aladhan.Adhan.readable_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the prayer time in a human readable format.
