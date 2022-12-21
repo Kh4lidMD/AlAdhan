@@ -13,7 +13,7 @@ Let's initialize the client first:
     location = aladhan.City("Doha", "QA") # Doha, Qatar
     client = aladhan.Client(location)
 
-aladhan.Aladhan.get_today_times
+aladhan.Client.get_today_times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a list of `Adhan` objects for today's prayer times.
@@ -22,7 +22,7 @@ Arguments:
 
 - ``location: City | Coordinates | Address``: Location of the prayer times (optional, default= ``None``).
 
-aladhan.Aladhan.get_calendar_times
+aladhan.Client.get_calendar_times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a list of `Adhan` objects for the current month's prayer times, or you can specify the ```month`` and ```year`` arguments to get a specifc date.
@@ -33,7 +33,7 @@ Arguments:
 - ``month: int``: Month number (optional, default= ``None``).
 - ``year: int``: Year number (optional, default= ``None``).
 
-aladhan.Aladhan.get_annual_times
+aladhan.Client.get_annual_times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a list of `Adhan` objects for specifc year's prayer times (current year by default), which returns all the prayer times for the year, day by day.
