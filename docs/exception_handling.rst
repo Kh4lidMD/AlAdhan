@@ -49,7 +49,7 @@ Exception raised when a invalid location is provided, e.g invalid coordinates.
     >>> 
     >>> location = aladhan.Coordinates(0, 1000)
     Traceback (most recent call last):
-        File "<stdin>", line 1, in <module>
-        File "C:\Users\Khaled\Documents\GitHub\AlAdhan\aladhan\location_types.py", line 10, in __init__
+        File "...", line 1, in <module>
+        File "...\location_types.py", line 10, in __init__
             raise InvalidLocationException("Invalid coordinates")
     aladhan.exceptions.InvalidLocationException: Invalid coordinates

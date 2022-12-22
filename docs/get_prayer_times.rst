@@ -4,15 +4,6 @@ Get Prayer Times
 
 We can get today's prayer times, all current month prayer times, or annual prayer times using ``get_calendar_times``, ``get_today_times``, or ``get_annual_times`` methods. All of them returns a list of ``Adhan`` objects with some useful methods.
 
-Let's initialize the client first:
-
-.. code-block:: python
-
-    import aladhan
-
-    location = aladhan.City("Doha", "QA") # Doha, Qatar
-    client = aladhan.Client(location)
-
 aladhan.Client.get_today_times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -25,7 +16,7 @@ Arguments:
 aladhan.Client.get_calendar_times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a list of `Adhan` objects for the current month's prayer times, or you can specify the ```month`` and ```year`` arguments to get a specifc date.
+Returns a list of `Adhan` objects for the current month's prayer times, or you can specify the ``month`` and ``year`` arguments to get a specifc date.
 
 Arguments:
 

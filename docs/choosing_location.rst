@@ -35,7 +35,7 @@ Arguments:
 
 - ``city (str)``: The name of the city (required)
 - ``country (str)``: The alpha-2 code of the country (required)
-- ``state (str)``: The name of the state (optional, default=``None``)
+- ``state (str)``: The name of the state (optional, default= ``None``)
 
 Example:
 

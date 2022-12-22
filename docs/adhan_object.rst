@@ -113,7 +113,7 @@ Returns the Arabic name of the salah.
 Arguments:
 
 - ``tashkeel (bool)``: to add tashkeel to the Arabic name or not (optional, default= ``False``)
-- ``include_al (bool)``: to include the definite article (ال) or not (e.g. العشاء instead of عشاء) (optional, default= ``False``)
+- ``include_al (bool)``: to include the definite article (ال) or not (e.g. العشاء instead of عشاء) (optional, default= ``True``)
 
 Returns:
 
