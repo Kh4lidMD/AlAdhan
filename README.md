@@ -17,9 +17,8 @@ _Learn more about Adhan in [Wikipedia](https://en.wikipedia.org/wiki/Adhan)_
 - Get the prayer times for any location in the world.
 - Get the prayer times for any date.
 - No API keys, authentication, or registration required.
-- Converting the JSON responses to Python objects.
-- 3 Location methods: Coordinates, City, and Address.
-- More Adhan metadata made by the module, such as the number of rakat in salah, sunnan al rawatib rakat number, is hijri or secret salah, etc.
+- Converting the JSON responses to Python objects and OOP based.
+- More adhan metadata made by the module, such as the number of rakat in salah, sunnan al rawatib rakat number, is hijri or secret salah, etc.
 
 <br>
 
@@ -27,13 +26,13 @@ _Learn more about Adhan in [Wikipedia](https://en.wikipedia.org/wiki/Adhan)_
 
 The project is available on [PyPI](https://pypi.org/project/aladhan-api/), so you can install it using [pip](https://www.w3schools.com/python/python_pip.asp):
 
-```python
+```bash
 pip install aladhan-api
 ```
 
 If you have an older version of the API, you can update it to the latest version using:
 
-```python
+```bash
 pip install aladhan-api --upgrade
 ```
 
@@ -41,7 +40,7 @@ pip install aladhan-api --upgrade
 
 # Documentation
 
-Now you can find the documentation for the API in [Read the Docs](https://aladhan.readthedocs.io/en/latest/).
+Detailed documentation for the API can be found at [Read the Docs](https://aladhan.readthedocs.io/en/latest/).
 
 <br>
 
@@ -64,6 +63,10 @@ Now you can find the documentation for the API in [Read the Docs](https://aladha
 [v2.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v2.0.0-alpha)
 
 v1.0.0 (Alpha) - initial release
+
+<br>
+
+See all the releases [here](https://www.github.com/Kh4lidMD/AlAdhan/releases).
 
 <br><br>
 
