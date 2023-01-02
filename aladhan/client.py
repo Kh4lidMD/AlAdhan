@@ -182,7 +182,7 @@ class Client:
         response = requests.get(API + ENDPOINT, params=params)
         data = response.json()
         self.__detect_exceptions(response, data)
-        
+
         # loop through the data and create a list of Adhan objects
         adhan_list = []
         for month in data['data']:
@@ -196,3 +196,16 @@ class Client:
                     adhan_list.append(Adhan(salah_name, salah_time))
         
         return adhan_list
+
+    
+    def api_status(self) -> dict:
+        """
+        Get the status of the API, returns a dictionary with the `status` and `code` keys,
+        might raise an `requests.exceptions.ConnectionError` if the website is down.
+        """
+        
+        # send the request and get the JSON data
+        response = requests.get(API + 'liveness')
+        data = response.json()
+        
+        return {'status': data['status'], 'code': data['code']}

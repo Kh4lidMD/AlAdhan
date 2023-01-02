@@ -41,6 +41,15 @@ All the methods above have the same raises:
 - ``aladhan.exceptions.BadRequestException``: Raised when the request is invalid (e.g. invalid date).
 - ``aladhan.exceptions.ServerErrorException``: Raised when the server responds with unhandled error.
 
+aladhan.Client.api_status
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get the status of the API, returns a dictionary with the `status` and `code` keys, might raise an `requests.exceptions.ConnectionError` if the website is down.
+
+Returns:
+
+- ``dict``: A dictionary with the ``status`` and ``code`` keys.
+
 Example
 ~~~~~~~
 
