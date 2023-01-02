@@ -14,7 +14,7 @@ Arguments:
 - ``location: City | Coordinates | Address``: Location of the prayer times (optional, default= ``None``).
 
 aladhan.Client.get_calendar_times
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a list of `Adhan` objects for the current month's prayer times, or you can specify the ``month`` and ``year`` arguments to get a specifc date.
 
@@ -25,7 +25,7 @@ Arguments:
 - ``year: int``: Year number (optional, default= ``None``).
 
 aladhan.Client.get_annual_times
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a list of `Adhan` objects for specifc year's prayer times (current year by default), which returns all the prayer times for the year, day by day.
 
@@ -42,7 +42,7 @@ All the methods above have the same raises:
 - ``aladhan.exceptions.ServerErrorException``: Raised when the server responds with unhandled error.
 
 aladhan.Client.api_status
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Get the status of the API, returns a dictionary with the `status` and `code` keys, might raise an `requests.exceptions.ConnectionError` if the website is down.
 
