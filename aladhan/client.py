@@ -33,7 +33,7 @@ class Client:
             params['address'] = location.url_encoded()
         elif isinstance(location, City):
             params['city'] = location.city
-            params['country'] = location.country
+            params['country'] = location.country['ISO3166-1-Alpha-2']
             if location.state:
                 params['state'] = location.state
 

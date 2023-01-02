@@ -29,13 +29,17 @@ Example:
 aladhan.City
 ~~~~~~~~~~~~
 
-City is a location object that is defined by a city name and a country alpha-2 code.
+City is a location object that is defined by a city name and a country, state is optional.
 
 Arguments:
 
 - ``city (str)``: The name of the city (required)
-- ``country (str)``: The alpha-2 code of the country (required)
-- ``state (str)``: The name of the state (optional, default= ``None``)
+- ``country (str)``: The name or code of the country in ISO 3166-1 alpha-2 or alpha-3 format, or a CLDR short name. Examples: QA, QAT, Qatar (required)
+- ``state (str)``: The name of the state or region where the city is located (optional, default= ``None``)
+
+Raises:
+
+- ``InvalidLocationException``: If the country is invalid.
 
 Example:
 
