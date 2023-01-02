@@ -2,7 +2,7 @@
 Choosing a location
 ===================
 
-Before using the module, you have to choose a location to get the prayer times for. And this API will not determine your location by itself, but you have to define it, in order to define a location, you have to import a location object. There is 3 types of locaton objects:
+Before using the module, you must specify a location to get prayer times for. The API does not automatically determine your location, so you must define it by using a location object. There are three types of location objects:
 
 aladhan.Coordinates
 ~~~~~~~~~~~~~~~~~~~
