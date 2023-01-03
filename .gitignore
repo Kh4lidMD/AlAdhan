@@ -3,3 +3,4 @@ aladhan_api.egg-info
 dist
 docs/_build
 docs/build
+main.py
