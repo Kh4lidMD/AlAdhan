@@ -2,14 +2,6 @@ from time import sleep
 from datetime import datetime
 import threading
 
-TRANSLATE = {
-    "Fajr": {"ar": "فجر", "tashkeel_ar": "فَجْرٌ"},
-    "Dhuhr": {"ar": "ظهر", "tashkeel_ar": "ظُهْرٌ"},
-    "Asr": {"ar": "عصر", "tashkeel_ar": "عَصْرٌ"},
-    "Maghrib": {"ar": "مغرب", "tashkeel_ar": "مَغْرِبٌ"},
-    "Isha": {"ar": "عشاء", "tashkeel_ar": "عَشَاءٌ"}
-}
-
 
 class Adhan:
 
@@ -120,12 +112,21 @@ class Adhan:
         - `tashkeel: bool=False` to include tashkeel or not (e.g. مَغْرِبٌ).
         - `include_al: bool=True` to include the definite article (ال) or not (e.g. العشاء instead of عشاء).
         """
-        name = TRANSLATE[self.name]['ar']
+        
+        translate = {
+            "Fajr":    {"ar": "فجر", "tashkeel_ar": "فَجْرٌ"},
+            "Dhuhr":   {"ar": "ظهر", "tashkeel_ar": "ظُهْرٌ"},
+            "Asr":     {"ar": "عصر", "tashkeel_ar": "عَصْرٌ"},
+            "Maghrib": {"ar": "مغرب", "tashkeel_ar": "مَغْرِبٌ"},
+            "Isha":    {"ar": "عشاء", "tashkeel_ar": "عَشَاءٌ"}
+        }
+        
+        name = translate[self.name]['ar']
         if tashkeel:
-            name = TRANSLATE[self.name]['tashkeel_ar']
+            name = translate[self.name]['tashkeel_ar']
         if include_al:
             name = 'ال' + name
-        
+
         return name
 
     def sunnan_al_rawatib(self) -> dict:
