@@ -46,7 +46,9 @@ Detailed documentation for the API can be found at [Read the Docs](https://aladh
 
 # Versioning
 
-[v6.0.0 (Alpha) **Latest**](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v6.0.0-alpha)
+[v6.1.0 (Alpha) **Latest**](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v6.1.0-alpha)
+
+[v6.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v6.0.0-alpha)
 
 [v5.0.0 (Alpha)](https://github.com/Kh4lidMD/AlAdhan/releases/tag/v5.0.0-alpha)
 

@@ -11,7 +11,7 @@ import sphinx_rtd_theme
 project = 'Al Adhan Python API'
 copyright = '2022, Khaled Mahmoud'
 author = 'Khaled Mahmoud'
-release = '6.0.0 Alpha'
+release = '6.1.0 Alpha'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
