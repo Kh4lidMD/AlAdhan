@@ -60,6 +60,11 @@ Arguments:
 - ``*args``: arguments to pass to the callback function (optional)
 - ``**kwargs``: keyword arguments to pass to the callback function (optional)
 
+Returns:
+
+- ``None``
+- ``threading.Thread``: if ``threaded_wait`` is ``True``
+
 aladhan.Adhan.is_passed
 ~~~~~~~~~~~~~~~~~~~~~~~
 
