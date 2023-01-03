@@ -77,7 +77,7 @@ class Adhan:
                 callback(*args, **kwargs)
 
         if threaded_wait:
-            threading.Thread(target=wait_function).start()
+            threading.Thread(target=wait_function, name=f'Wait thread for {self.name} at {self.readable_timing()}').start()
         else:
             wait_function()
 
